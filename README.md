@@ -28,6 +28,12 @@ npm run dev
 
 开发服务器将在 `http://localhost:3000` 启动
 
+### 关联到 GitHub 远程仓库
+vite.config.js -> base: '/Fan-AI-Tools-and-Learning-Website/'
+
+部署成功后，网站会发布到：https://你的用户名.github.io/Fan-AI-Tools-Website/
+
+
 ### 构建生产版本
 package.json -> scripts -> build
 
@@ -38,17 +44,13 @@ npm run build
 npm run deploy
 ```
 
-### 关联到 GitHub 远程仓库
-vite.config.js -> base: '/Fan-AI-Tools-and-Learning-Website/'
-
-部署成功后，网站会发布到：https://你的用户名.github.io/Fan-AI-Tools-Website/
-
 ### 预览生产版本
 package.json -> scripts -> preview
 
 ```bash
 npm run preview
 ```
+
 
 ## 项目结构
 
