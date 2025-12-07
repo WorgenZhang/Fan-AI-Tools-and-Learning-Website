@@ -3,7 +3,7 @@
         <div class="featured-card">
             <router-link to="/article/featured" class="featured-image-link">
                 <div class="featured-image">
-                    <img src="/黑白水墨画.png" alt="Featured Article" />
+                    <img :src="getAssetPath('/黑白水墨画.png')" alt="Featured Article" />
                 </div>
             </router-link>
             <div class="featured-content">
@@ -25,8 +25,13 @@
 </template>
 
 <script>
+import { getAssetPath } from '../utils/path.js'
+
 export default {
-    name: 'FeaturedArticle'
+    name: 'FeaturedArticle',
+    methods: {
+        getAssetPath
+    }
 }
 </script>
 

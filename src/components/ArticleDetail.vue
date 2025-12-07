@@ -7,9 +7,9 @@
             </button>
 
             <!-- 封面图片（横向卡片布局，参考 Featured Article） -->
-            <div class="detail-cover">
+            <div class="detail-cover" v-if="article.image">
                 <div class="cover-image">
-                    <img :src="article.image" :alt="article.title" />
+                    <img :src="getAssetPath(article.image)" :alt="article.title" />
                 </div>
             </div>
 
@@ -27,7 +27,7 @@
                 </div>
                 <div class="meta-right">
                     <a :href="article.videoUrl" target="_blank" class="xiaohongshu-icon" v-if="article.videoUrl" title="查看原视频">
-                        <img src="/icon.jpg" alt="小红书" />
+                        <img :src="getAssetPath('/icon.jpg')" alt="小红书" />
                     </a>
                 </div>
             </div>
@@ -41,8 +41,7 @@
             <!-- 视频播放区域 -->
             <div class="video-section" v-if="article.videoUrl">
                 <div class="video-container" :style="{ maxHeight: videoHeight + 'px' }" @click="openVideo">
-                    <img v-if="article.videoCover" :src="article.videoCover" alt="视频封面" class="video-cover" />
-                    <img v-else src="" alt="视频封面" class="video-cover" />
+                    <img v-if="article.videoCover" :src="getAssetPath(article.videoCover)" alt="视频封面" class="video-cover" />
                     <div class="video-overlay">
                         <div class="play-button-large">
                             <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -74,6 +73,7 @@
 import { useRoute, useRouter } from 'vue-router'
 import { computed, ref } from 'vue'
 import { getArticleDetail } from '../data/blogPosts.js'
+import { getAssetPath } from '../utils/path.js'
 
 export default {
     name: 'ArticleDetail',
@@ -150,7 +150,8 @@ export default {
             videoHeight,
             adjustHeight,
             resetHeight,
-            startResize
+            startResize,
+            getAssetPath
         }
     }
 }

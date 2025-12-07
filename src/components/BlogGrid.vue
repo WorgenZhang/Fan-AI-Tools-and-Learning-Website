@@ -7,7 +7,7 @@
         >
             <router-link :to="`/article/${post.id || 'featured'}`" class="blog-image-link">
                 <div class="blog-image" :class="{ 'has-image': post.coverImage }">
-                    <img v-if="post.coverImage" :src="post.coverImage" :alt="post.title" />
+                    <img v-if="post.coverImage" :src="getAssetPath(post.coverImage)" :alt="post.title" />
                 </div>
             </router-link>
             <div class="blog-post">
@@ -32,6 +32,8 @@
 </template>
 
 <script>
+import { getAssetPath } from '../utils/path.js'
+
 export default {
     name: 'BlogGrid',
     props: {
@@ -48,7 +50,8 @@ export default {
     methods: {
         handleTagClick(tag) {
             this.$emit('toggle-tag', tag)
-        }
+        },
+        getAssetPath
     }
 }
 </script>
