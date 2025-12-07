@@ -41,9 +41,7 @@ npm run dev
 
 
 ### 构建生产版本
-package.json -> scripts -> build
-
-package.json -> scripts -> deploy
+package.json -> scripts -> build/deploy
 
 ```bash
 npm run build
