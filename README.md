@@ -28,10 +28,16 @@ npm run dev
 
 开发服务器将在 `http://localhost:3000` 启动
 
-### 关联到 GitHub 远程仓库
-vite.config.js -> base: '/Fan-AI-Tools-and-Learning-Website/'
-
-部署成功后，网站会发布到：https://你的用户名.github.io/Fan-AI-Tools-Website/
+### 配置 GitHub Pages
+1. vite.config.js -> base: '/Fan-AI-Tools-and-Learning-Website/'
+2. 打开仓库：https://github.com/WorgenZhang/Fan-AI-Tools-and-Learning-Website
+3. 点击 Settings（设置）
+4. 左侧菜单找到 Pages
+5. 在 Source 选择：
+- Branch: gh-pages
+- Folder: / (root)
+6. 点击 Save
+稍等几分钟后，你的网站将发布在：https://worgenzhang.github.io/Fan-AI-Tools-and-Learning-Website/
 
 
 ### 构建生产版本
@@ -41,7 +47,8 @@ package.json -> scripts -> deploy
 
 ```bash
 npm run build
-npm run deploy
+cd dist && git add -A && git commit -m "update" && git push -f origin gh-pages
+# npm run deploy
 ```
 
 ### 预览生产版本
