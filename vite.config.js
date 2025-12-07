@@ -1,11 +1,12 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [vue()],
-  base: '/Fan-AI-Tools-and-Learning-Website/', // GitHub Pages 部署路径，改为你的仓库名
+  // 开发环境用 '/'，生产环境用 GitHub Pages 路径
+  base: mode === 'production' ? '/Fan-AI-Tools-and-Learning-Website/' : '/',
   server: {
     port: 3000,
     open: true
   }
-})
+}))
