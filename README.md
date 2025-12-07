@@ -30,6 +30,7 @@ npm run dev
 
 ### 构建生产版本
 package.json -> scripts -> build
+
 package.json -> scripts -> deploy
 
 ```bash
@@ -39,6 +40,7 @@ npm run deploy
 
 ### 关联到 GitHub 远程仓库
 vite.config.js -> base: '/Fan-AI-Tools-and-Learning-Website/'
+
 部署成功后，网站会发布到：https://你的用户名.github.io/Fan-AI-Tools-Website/
 
 ### 预览生产版本
