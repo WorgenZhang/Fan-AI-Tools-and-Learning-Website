@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:edgeone": "VITE_EDGEONE=true vite build",
     "preview": "vite preview",
     "deploy": "npm run build && gh-pages -d dist"
   },
