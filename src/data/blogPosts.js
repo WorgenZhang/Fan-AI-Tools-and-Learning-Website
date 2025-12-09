@@ -19,43 +19,74 @@ export const getArticleDetail = (id) => {
 const articleDetails = {
     'featured': {
         id: 'featured',
-        title: '我结合AI工具阅读论文的四个阶段',
+        title: 'Figma+Cursor生成个人网页并使用Github Pages部署全流程纯干货分享',
         author: '不讲道理的瞬间',
-        date: 'Dec 1, 2025',
-        image: '/黑白水墨画.png',
-        coverImage: '/黑白水墨画.png',
-        videoUrl: 'https://www.xiaohongshu.com/explore/692bedbb000000001d03bd18?xsec_token=ABKKn7k_AoJIVFMKFqyVr6YeaoBlDdp6xpiLsqUClfJ3k%3D&xsec_source=pc_user',
-        videoCover: '/AI工具阅读论文-Video.png',
+        date: 'Dec 7, 2025',
+        image: '/Figma-Cursor-个人网页.png',
+        videoUrl: 'https://www.xiaohongshu.com/explore/693580de000000001e002a92?xsec_token=ABSJg4X_EWdCnih4dlvPBFEtQn4yS-EV5AgQBv4re9v70=&xsec_source=pc_user',
+        videoCover: '/Figma-Cursor-个人网页-Video.png',
         content: [
             {
-                title: '阶段一：可视化理解',
+                title: '1. 产生想法',
                 paragraphs: [
-                    '1. Google Gemini 3.0 Pro(快速总结) + Gemini Canvas(高度可视化概要)',
-                    '2. NotebookLM - 信息图、演示文稿'
+                    '把自己内化的或者认为好用的AI工具以可视化方式记录下来，随时更新'
                 ]
             },
             {
-                title: '阶段二：多模态理解',
+                title: '2. 寻找好的前端交互模板或范例',
                 paragraphs: [
-                    '1. NotebookLM - 音频、视频',
-                    '2. B站 - 视频'
+                    'best blog websites examples -> https://www.sitebuilderreport.com/inspiration/blog-examples',
+                    'https://www.perplexity.ai/hub'
                 ]
             },
             {
-                title: '阶段三：追问理解',
+                title: '3. 将Html网页通过插件导入到Figma',
                 paragraphs: [
-                    '1. 学习辅导or直接提问 - Gemini or NotebookLM',
-                    '2. 根据论文脉络理解 - NotebookLM思维导图 + 对具体问题追问',
-                    '3. 理解论文中所有图表 - ReadPaper + NotebookLM追问',
-                    '4. 知识点差缺补漏 - NotebookLM测验、闪卡'
                 ]
             },
             {
-                title: '阶段四：整篇论文精读',
+                title: '4. Cursor中配置Talk to Figma MCP',
                 paragraphs: [
-                    '1. ReadPaper(读论文做笔记) + NotebookLM(关联论文和其它素材回答) + Gemini(通用问题)'
+                    'git clone repo cursor-talk-to-figma-mcp',
+                    'cursor-talk-to-figma-mcp目录中install bun & 执行bun socket',
+                    'Cursor中配置MCP Server',
+                    'Figma App中安装Cursor MCP Plugin'
                 ]
-            }
+            },
+            {
+                title: '5. Cursor构建html文件，可以在本地浏览器运行并不断修改调试',
+                paragraphs: [
+                ]
+            },
+            {
+                title: '6. 根据Html构建工程文件',
+                paragraphs: [
+                    'Prompt: 根据index.html这个页面，构建一个工程文件，基于VUE，一定要保持和这个页面的设计一模一样，可以在本地浏览器运行',
+                    '安装依赖 npm install',
+                    '启动开发服务器 npm run dev'
+                ]
+            },
+            {
+                title: '7. 利用Cursor完成网页制作',
+                paragraphs: [
+                    '将个人内容填充进网页中',
+                    '符合自己审美Taste',
+                    'Patience is All Your Need'
+                ]
+            },
+            {
+                title: '8. 将代码上传自己的Github Repo仓库',
+                paragraphs: [
+                    'https://jcnxsec3j5sb.feishu.cn/wiki/HXWCwdm3aiqJlXkkfaicrDeKnMe?from=from_copylink'
+                ]
+            },
+            {
+                title: '9. 基于Github Repo部署自己的网站',
+                paragraphs: [
+                    'Github Pages (大陆地区不友好)',
+                    'Tencent EdgeOne (海外+大陆地区 但需要实名认证+自定义域名)'
+                ]
+            },
         ]
     },
 '12': {

@@ -3,21 +3,21 @@
         <div class="featured-card">
             <router-link to="/article/featured" class="featured-image-link">
                 <div class="featured-image">
-                    <img :src="getAssetPath('/黑白水墨画.png')" alt="Featured Article" />
+                    <img :src="getAssetPath('/Figma-Cursor-个人网页.png')" alt="Featured Article" />
                 </div>
             </router-link>
             <div class="featured-content">
                 <router-link to="/article/featured" class="featured-title-link">
-                    <h2 class="featured-title">我结合AI工具<br>阅读论文的<br>四个阶段</h2>
+                    <h2 class="featured-title">Figma+Cursor生成个人网页<br>并使用Github Pages部署<br>全流程纯干货分享</h2>
                 </router-link>
-                <p class="featured-description">可视化理解->多模态理解->追问理解->整篇论文精读</p>
+                <p class="featured-description"></p>
                 <router-link to="/article/featured" class="read-more-btn">READ MORE</router-link>
                 <div class="featured-tags">
                     <span class="featured-tag">AI Methodology</span>
-                    <span class="featured-tag">Gemini3.0</span>
-                    <span class="featured-tag">NotebookLM</span>
-                    <span class="featured-tag">ReadPaper</span>
-                    <span class="featured-tag">Paper</span>
+                    <span class="featured-tag">Figma</span>
+                    <span class="featured-tag">Cursor</span>
+                    <span class="featured-tag">MCP</span>
+                    <span class="featured-tag">Github Pages</span>
                 </div>
             </div>
         </div>
