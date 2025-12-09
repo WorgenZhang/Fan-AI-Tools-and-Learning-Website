@@ -58,8 +58,48 @@ const articleDetails = {
             }
         ]
     },
-    '1': {
-        id: '1',
+'12': {
+        id: '12',
+        title: '我结合AI工具阅读论文的四个阶段',
+        author: '不讲道理的瞬间',
+        date: 'Dec 1, 2025',
+        image: '/黑白水墨画.png',
+        videoUrl: 'https://www.xiaohongshu.com/explore/692bedbb000000001d03bd18?xsec_token=ABKKn7k_AoJIVFMKFqyVr6YeaoBlDdp6xpiLsqUClfJ3k%3D&xsec_source=pc_user',
+        videoCover: '/AI工具阅读论文-Video.png',
+        content: [
+            {
+                title: '阶段一：可视化理解',
+                paragraphs: [
+                    '1. Google Gemini 3.0 Pro(快速总结) + Gemini Canvas(高度可视化概要)',
+                    '2. NotebookLM - 信息图、演示文稿'
+                ]
+            },
+            {
+                title: '阶段二：多模态理解',
+                paragraphs: [
+                    '1. NotebookLM - 音频、视频',
+                    '2. B站 - 视频'
+                ]
+            },
+            {
+                title: '阶段三：追问理解',
+                paragraphs: [
+                    '1. 学习辅导or直接提问 - Gemini or NotebookLM',
+                    '2. 根据论文脉络理解 - NotebookLM思维导图 + 对具体问题追问',
+                    '3. 理解论文中所有图表 - ReadPaper + NotebookLM追问',
+                    '4. 知识点差缺补漏 - NotebookLM测验、闪卡'
+                ]
+            },
+            {
+                title: '阶段四：整篇论文精读',
+                paragraphs: [
+                    '1. ReadPaper(读论文做笔记) + NotebookLM(关联论文和其它素材回答) + Gemini(通用问题)'
+                ]
+            }
+        ]
+    },
+    '11': {
+        id: '11',
         title: '分享Vibe Coding的一些心得体会',
         author: '不讲道理的瞬间',
         date: 'Nov 29, 2025',
@@ -105,8 +145,8 @@ const articleDetails = {
             },
         ]
     },
-    '2': {
-        id: '2',
+    '10': {
+        id: '10',
         title: "'大一统'大模型时代下对于AI工具的迭代法则",
         author: '不讲道理的瞬间',
         date: 'Nov 22, 2025',
@@ -135,8 +175,8 @@ const articleDetails = {
 
         ]
     },
-    '3': {
-        id: '3',
+    '9': {
+        id: '9',
         title: '分享四种使用最新Gemini3.0大模型方式',
         author: '不讲道理的瞬间',
         date: 'Nov 25, 2025',
@@ -185,21 +225,28 @@ function processBlogPost(post) {
 // 博客文章列表（用于首页显示）
 export const blogPosts = [
     { 
-        id: '1',
+        id: '12',
+        title: "我结合AI工具阅读论文的四个阶段", 
+        date: "Dec 1, 2025", 
+        tags: ["AI Methodology", "Gemini3.0", "NotebookLM", "ReadPaper", "Paper"],
+        coverImage: '/黑白水墨画.png'
+    },
+    { 
+        id: '11',
         title: "分享Vibe Coding的一些心得体会", 
         date: "Nov 29, 2025", 
-        tags: ["Vibe Coding", "AI Methodology", "Cursor"],
+        tags: ["AI Methodology", "Vibe Coding", "Cursor"],
         coverImage: '/Vibe-Coding.png'
     },
     { 
-        id: '2',
+        id: '10',
         title: "'大一统'大模型时代下对于AI工具的迭代法则", 
         date: "Nov 22, 2025", 
         tags: ["AI Methodology", "AI Tools Collection"],
         coverImage: "/AI工具的迭代法则.png"
     },
     { 
-        id: '3',
+        id: '9',
         title: "分享四种使用最新Gemini3.0大模型方式", 
         date: "Nov 19, 2025", 
         tags: ["Gemini3.0", "Base Model"],
