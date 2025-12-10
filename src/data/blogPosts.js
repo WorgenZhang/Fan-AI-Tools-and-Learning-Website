@@ -286,7 +286,80 @@ const articleDetails = {
                 ]
             },
         ]
-    }
+    },
+    '6': {
+        id: '6',
+        title: '分享我最爱用的两个阅读论文辅助工具',
+        author: '不讲道理的瞬间',
+        date: 'Oct 20, 2025',
+        image: '/阅读论文工具.png',
+        videoUrl: 'https://www.xiaohongshu.com/explore/68f6349f0000000007023105?xsec_token=ABHF3HvkKBrVSeDgfzcdJEvZFAupEKtgHeYAjwhtzVL5s=&xsec_source=pc_user',
+        videoCover: '/阅读论文工具-Video.png',
+        content: [
+            {
+                title: '',
+                paragraphs: [
+                    '1. 阅读论文 - ReadPaper',
+                    '2. 理解论文 - NotebookLM',
+                    '这两个工具是相辅相成使用的，具体用法见视频'
+                ]
+            },
+        ]
+    },
+    '5': {
+        id: '5',
+        title: '使用通义千问将小宇宙播客音频转写为文字',
+        author: '不讲道理的瞬间',
+        date: 'Oct 18, 2025',
+        image: '/音频转写为文字.png',
+        videoUrl: 'https://www.xiaohongshu.com/explore/68f35073000000000700efc8?xsec_token=ABzZI0IsAXwSDvjdD47eb7UxYmWL_UT5QIIlYmn3U5Ugg=&xsec_source=pc_user',
+        videoCover: '/音频转写为文字-Video.png',
+        content: [
+            {
+                title: '',
+                paragraphs: [
+                    '1. 复制对应小宇宙播客链接',
+                    '2. 将链接粘贴到通义千问"链接速读',
+                    '3. 解析音频'
+                ]
+            },
+        ]
+    },
+    '4': {
+        id: '4',
+        title: 'Claude4画时序图太香了！4步搞定',
+        author: '不讲道理的瞬间',
+        date: 'Oct 20, 2025',
+        image: '/Claude4画时序图.png',
+        videoUrl: 'https://www.xiaohongshu.com/explore/685fe120000000000d01a3ae?xsec_token=ABF6h8TeXk3PV-gNtGvKeauM8yI_gb99lBcNjufMeIAg8=&xsec_source=pc_user',
+        videoCover: '/Claude4画时序图-Video.png',
+        content: [
+            {
+                title: '1. 写出完美Prompt',
+                paragraphs: [
+                    '关键是要详细！一个真正可用/严谨的时序图一定要在prompt里提供完整的流程时序、最好说明participant都是谁、哪些是需要特别注意的点（文末有我整理的万能模板👇）'
+                ]
+            },
+            {
+                title: '2. 让模型生成时序图mermaid',
+                paragraphs: [
+                    'Claude4里喂入prompt生成时序图对应mermaid'
+                ]
+            },
+            {
+                title: '3. Drawio一键导入',
+                paragraphs: [
+                    '复制粘贴mermaid代码到Drawio，秒变可视化图表 见图3-图4'
+                ]
+            },
+            {
+                title: '4. 细节人工优化',
+                paragraphs: [
+                    '一点点仔细查看时序图，遇到问题再Drawio里双击该时序图然后在mermaid对应地方进行修改即可'
+                ]
+            },
+        ]
+    },
 }
 
 // 处理博客列表中的图片路径
@@ -305,7 +378,7 @@ export const blogPosts = [
         id: '12',
         title: "我结合AI工具阅读论文的四个阶段", 
         date: "Dec 1, 2025", 
-        tags: ["AI Methodology", "Gemini3.0", "NotebookLM", "ReadPaper", "Paper"],
+        tags: ["AI Methodology", "Gemini3.0", "NotebookLM", "ReadPaper", "Paper",  "AI Tools Collection"],
         coverImage: '/黑白水墨画.png'
     },
     { 
@@ -319,14 +392,14 @@ export const blogPosts = [
         id: '10',
         title: "'大一统'大模型时代下对于AI工具的迭代法则", 
         date: "Nov 22, 2025", 
-        tags: ["AI Methodology", "AI Tools Collection"],
+        tags: ["AI Methodology"],
         coverImage: "/AI工具的迭代法则.png"
     },
     { 
         id: '9',
         title: "分享四种使用最新Gemini3.0大模型方式", 
         date: "Nov 19, 2025", 
-        tags: ["Gemini", "Gemini3.0", "Base Model"],
+        tags: ["Gemini", "Gemini3.0", "Base Model", "AI Tools Collection"],
         coverImage: "/Gemini3.0使用方式.png"
     },
     { 
@@ -340,7 +413,28 @@ export const blogPosts = [
         id: '7',
         title: "Minimax M2画模块关系图还是挺惊喜的", 
         date: "Nov 19, 2025", 
-        tags: ["Minimax", "Minimax M2", "Base Model", "Diagram"],
+        tags: ["Minimax", "Minimax M2", "Base Model", "Diagram",  "AI Tools Collection"],
         coverImage: "/MinimaxM2时序图.png"
+    },
+    { 
+        id: '6',
+        title: "分享我最爱用的两个阅读论文辅助工具", 
+        date: "Oct 20, 2025", 
+        tags: ["NotebookLM", "ReadPaper", "Paper", "AI Tools Collection"],
+        coverImage: "/阅读论文工具.png"
+    },
+    { 
+        id: '5',
+        title: "使用通义千问将小宇宙播客音频转写为文字", 
+        date: "Oct 18, 2025", 
+        tags: ["Qwen", "小宇宙", "AI Tools Collection"],
+        coverImage: "/音频转写为文字.png"
+    },
+    { 
+        id: '4',
+        title: "Claude4画时序图太香了！4步搞定", 
+        date: "June 28, 2025", 
+        tags: ["Claude", "Claude4.5", "Diagram", "AI Tools Collection"],
+        coverImage: "/Claude4画时序图.png"
     },
 ]
