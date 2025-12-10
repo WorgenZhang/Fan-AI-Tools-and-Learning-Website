@@ -269,6 +269,23 @@ const articleDetails = {
                 ]
             }
         ]
+    },
+    '7': {
+        id: '7',
+        title: 'Minimax M2画模块关系图还是挺惊喜的',
+        author: '不讲道理的瞬间',
+        date: 'Nov 19, 2025',
+        image: '/MinimaxM2时序图.png',
+        videoUrl: 'https://www.xiaohongshu.com/explore/691dcc1e000000001e000df6?xsec_token=ABX6gZRUzO9_dBgHSYhAZu6H5haAZQNH6_b5lnkGCG9tY=&xsec_source=pc_user',
+        videoCover: '/MinimaxM2时序图-Video.png',
+        content: [
+            {
+                title: '1. Claude Code + Minimax M2',
+                paragraphs: [
+                    'DSP HLOS SMMU Android QNX NPU是什么关系，帮我画个架构图，要体现模块之间包含关系'
+                ]
+            },
+        ]
     }
 }
 
@@ -309,7 +326,7 @@ export const blogPosts = [
         id: '9',
         title: "分享四种使用最新Gemini3.0大模型方式", 
         date: "Nov 19, 2025", 
-        tags: ["Gemini3.0", "Base Model"],
+        tags: ["Gemini", "Gemini3.0", "Base Model"],
         coverImage: "/Gemini3.0使用方式.png"
     },
     { 
@@ -318,5 +335,12 @@ export const blogPosts = [
         date: "Nov 19, 2025", 
         tags: ["AI Methodology"],
         coverImage: "/付费时代.png"
-    }
+    },
+    { 
+        id: '7',
+        title: "Minimax M2画模块关系图还是挺惊喜的", 
+        date: "Nov 19, 2025", 
+        tags: ["Minimax", "Minimax M2", "Base Model", "Diagram"],
+        coverImage: "/MinimaxM2时序图.png"
+    },
 ]

@@ -3,14 +3,10 @@
         <div class="header-container">
             <h1 class="site-title">Fan的AI工具和学习资源库</h1>
             <nav class="nav-links">
-                <!-- <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">Blog</a>
                 <div class="nav-divider"></div>
                 <a href="#" class="nav-link">Research</a>
                 <div class="nav-divider"></div>
-                <a href="#" class="nav-link">Careers</a>
-                <div class="nav-divider"></div>
-                <a href="#" class="nav-link">Help Center</a>
-                <div class="nav-divider"></div> -->
                 <a href="https://www.xiaohongshu.com/user/profile/5cf652380000000018035290" target="_blank" class="cta-button">关注我的小红书</a>
             </nav>
         </div>
