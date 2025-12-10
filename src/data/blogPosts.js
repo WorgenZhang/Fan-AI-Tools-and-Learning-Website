@@ -240,6 +240,35 @@ const articleDetails = {
                 ]
             },
         ]
+    },
+    '8': {
+        id: '8',
+        title: '大模型时代可能大家都需要具备模型付费思维',
+        author: '不讲道理的瞬间',
+        date: 'Nov 19, 2025',
+        image: '/付费时代.png',
+        videoUrl: 'https://www.xiaohongshu.com/explore/691dcdc9000000001e017057?xsec_token=ABX6gZRUzO9_dBgHSYhAZu6PaaZzb8vLtP6vZ8-jE5k7U=&xsec_source=pc_user',
+        videoCover: '/付费时代-Video.png',
+        content: [
+            {
+                title: '1. 付费意识',
+                paragraphs: [
+                    '大模型时代，所有人都要接受一个一个常识或者习惯，就是你要为大模型服务去付费'
+                ]
+            },
+            {
+                title: '2. 订阅制或套餐制付费',
+                paragraphs: [
+                    '目前的所有的Gemini、Chatgpt、Claude, 还有国内的Minimax、ChatGLM、Kimi, 它都是有这种订阅制的，或者说这种套餐制的，或者说你通过充值去付费KPI'
+                ]
+            },
+            {
+                title: '3. 复杂问题最好付费一个能力强大的模型',
+                paragraphs: [
+                    '如果日常生活中，可能大家会使用豆包，或者用腾讯的元宝，或者说DeepSeek，然后他们都是免费的，你在网页上就能用。但是真正到一些更复杂的问题，比如说文本写作、代码编写或者说一些可视化的交互等等，可能甚至论文的阅读，这些可能你就需要去购买一个或者订阅一个更强，有更强大那个能力的大模型，比如说Gemini或者ChatGPT5等等'
+                ]
+            }
+        ]
     }
 }
 
@@ -282,5 +311,12 @@ export const blogPosts = [
         date: "Nov 19, 2025", 
         tags: ["Gemini3.0", "Base Model"],
         coverImage: "/Gemini3.0使用方式.png"
+    },
+    { 
+        id: '8',
+        title: "大模型时代可能大家都需要具备模型付费思维", 
+        date: "Nov 19, 2025", 
+        tags: ["AI Methodology"],
+        coverImage: "/付费时代.png"
     }
 ]
