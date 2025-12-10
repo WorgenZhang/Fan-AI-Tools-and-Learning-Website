@@ -1,23 +1,19 @@
 <template>
     <section class="featured-section">
         <div class="featured-card">
-            <router-link to="/article/featured" class="featured-image-link">
+            <router-link :to="`/article/${featuredData.articleId}`" class="featured-image-link">
                 <div class="featured-image">
-                    <img :src="getAssetPath('/Figma-Cursor-个人网页.png')" alt="Featured Article" />
+                    <img :src="getAssetPath(featuredData.image)" alt="Featured Article" />
                 </div>
             </router-link>
             <div class="featured-content">
-                <router-link to="/article/featured" class="featured-title-link">
-                    <h2 class="featured-title">Figma+Cursor生成个人网页<br>并使用Github Pages部署<br>全流程纯干货分享</h2>
+                <router-link :to="`/article/${featuredData.articleId}`" class="featured-title-link">
+                    <h2 class="featured-title" v-html="formatTitle(featuredData.title)"></h2>
                 </router-link>
                 <p class="featured-description"></p>
-                <router-link to="/article/featured" class="read-more-btn">READ MORE</router-link>
+                <router-link :to="`/article/${featuredData.articleId}`" class="read-more-btn">READ MORE</router-link>
                 <div class="featured-tags">
-                    <span class="featured-tag">AI Methodology</span>
-                    <span class="featured-tag">Figma</span>
-                    <span class="featured-tag">Cursor</span>
-                    <span class="featured-tag">MCP</span>
-                    <span class="featured-tag">Github Pages</span>
+                    <span v-for="tag in featuredData.tags" :key="tag" class="featured-tag">{{ tag }}</span>
                 </div>
             </div>
         </div>
@@ -27,10 +23,39 @@
 <script>
 import { getAssetPath } from '../utils/path.js'
 
+// Blog Post 页面的 Featured Article 数据
+export const blogPostFeaturedData = {
+    id: 'featured',
+    title: 'Figma+Cursor生成个人网页<br>并使用Github Pages部署<br>全流程纯干货分享',
+    image: '/Figma-Cursor-个人网页.png',
+    tags: ['AI Methodology', 'Figma', 'Cursor', 'MCP', 'Github Pages'],
+    articleId: 'featured'
+}
+
+// Learning Resources 页面的 Featured Article 数据
+export const learningResourceFeaturedData = {
+    id: 'featured',
+    title: 'Learning Resources Featured Article',
+    image: '/general.png',
+    tags: ['Learning', 'Resources'],
+    articleId: 'featured'
+}
+
 export default {
     name: 'FeaturedArticle',
+    props: {
+        featuredData: {
+            type: Object,
+            required: true,
+            default: () => blogPostFeaturedData
+        }
+    },
     methods: {
-        getAssetPath
+        getAssetPath,
+        formatTitle(title) {
+            // 如果title包含<br>标签，直接返回，否则按原样返回
+            return title
+        }
     }
 }
 </script>

@@ -72,7 +72,8 @@
 <script>
 import { useRoute, useRouter } from 'vue-router'
 import { computed, ref } from 'vue'
-import { getArticleDetail } from '../data/blogPosts.js'
+import { getArticleDetail as getBlogArticleDetail } from '../data/blogPosts.js'
+import { getArticleDetail as getLearningResourceDetail } from '../data/learningResources.js'
 import { getAssetPath } from '../utils/path.js'
 
 export default {
@@ -84,14 +85,46 @@ export default {
         // 根据路由参数获取文章数据
         const article = computed(() => {
             const articleId = route.params.id || 'featured'
-            const articleData = getArticleDetail(articleId)
+            // 从 sessionStorage 获取来源页面标识，如果没有则默认使用 blogPosts
+            const articleSource = sessionStorage.getItem('articleSource') || 'blogPosts'
+            const isFromLearningResources = articleSource === 'learningResources'
             
-            // 如果没有找到文章，使用默认的 featured 文章
-            return articleData || getArticleDetail('featured')
+            // 如果是 featured 文章，根据来源页面决定使用哪个数据源
+            if (articleId === 'featured') {
+                if (isFromLearningResources) {
+                    return getLearningResourceDetail('featured')
+                } else {
+                    return getBlogArticleDetail('featured')
+                }
+            }
+            
+            // 对于其他文章，先尝试从 blogPosts 获取（主要数据源）
+            let articleData = getBlogArticleDetail(articleId)
+            if (!articleData) {
+                // 如果 blogPosts 中没有，再尝试从 learningResources 获取
+                articleData = getLearningResourceDetail(articleId)
+            }
+            
+            // 如果都没有找到，根据来源页面返回对应的 featured 文章
+            if (!articleData) {
+                if (isFromLearningResources) {
+                    return getLearningResourceDetail('featured')
+                } else {
+                    return getBlogArticleDetail('featured')
+                }
+            }
+            
+            return articleData
         })
 
         const goBack = () => {
-            router.push('/')
+            // 根据来源页面决定返回哪里
+            const articleSource = sessionStorage.getItem('articleSource') || 'blogPosts'
+            if (articleSource === 'learningResources') {
+                router.push('/learning-resources')
+            } else {
+                router.push('/')
+            }
         }
 
         // 打开视频链接

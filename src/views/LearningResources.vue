@@ -28,11 +28,11 @@ import FeaturedArticle from '../components/FeaturedArticle.vue'
 import SearchSection from '../components/SearchSection.vue'
 import BlogGrid from '../components/BlogGrid.vue'
 import NoResults from '../components/NoResults.vue'
-import { blogPosts } from '../data/blogPosts.js'
-import { blogPostFeaturedData } from '../components/FeaturedArticle.vue'
+import { learningResourcesPosts } from '../data/learningResources.js'
+import { learningResourceFeaturedData } from '../components/FeaturedArticle.vue'
 
 export default {
-    name: 'Home',
+    name: 'LearningResources',
     components: {
         Header,
         FeaturedArticle,
@@ -43,14 +43,14 @@ export default {
     setup() {
         // 设置来源页面标识
         onMounted(() => {
-            sessionStorage.setItem('articleSource', 'blogPosts')
+            sessionStorage.setItem('articleSource', 'learningResources')
         })
         const searchQuery = ref('')
         const activeTags = ref([])
-        const featuredData = ref(blogPostFeaturedData)
+        const featuredData = ref(learningResourceFeaturedData)
 
         const filteredPosts = computed(() => {
-            return blogPosts.filter(post => {
+            return learningResourcesPosts.filter(post => {
                 // 标签过滤
                 if (activeTags.value.length > 0) {
                     const postTags = post.tags.map(t => t.toLowerCase())
