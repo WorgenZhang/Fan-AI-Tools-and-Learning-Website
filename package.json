@@ -8,7 +8,6 @@
       "build": "vite build", 
       "build:edgeone": "VITE_EDGEONE=true vite build",
       "preview": "vite preview",
-      // 修改下面这一行：在构建前设置 VITE_BASE_URL
       "deploy": "VITE_BASE_URL=/Fan-AI-Tools-and-Learning-Website/ npm run build && gh-pages -d dist"
     }
   "dependencies": {
