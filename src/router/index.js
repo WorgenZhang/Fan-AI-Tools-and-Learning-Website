@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import LearningResources from '../views/LearningResources.vue'
+import UsefulWebsites from '../views/UsefulWebsites.vue'
 import ArticleDetail from '../components/ArticleDetail.vue'
 
 const routes = [
@@ -13,6 +14,11 @@ const routes = [
         path: '/learning-resources',
         name: 'LearningResources',
         component: LearningResources
+    },
+    {
+        path: '/useful-websites',
+        name: 'UsefulWebsites',
+        component: UsefulWebsites
     },
     {
         path: '/article/:id?',

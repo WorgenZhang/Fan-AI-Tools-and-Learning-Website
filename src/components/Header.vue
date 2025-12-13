@@ -3,9 +3,11 @@
         <div class="header-container">
             <h1 class="site-title">Fan的AI工具和学习资源库</h1>
             <nav class="nav-links">
-                <router-link to="/" class="nav-link">AI Tools & Methodology</router-link>
+                <router-link to="/" class="nav-link">My AI Tools & Methodology</router-link>
                 <div class="nav-divider"></div>
                 <router-link to="/learning-resources" class="nav-link">Learning Resources</router-link>
+                <div class="nav-divider"></div>
+                <router-link to="/useful-websites" class="nav-link">Useful Websites</router-link>
                 <div class="nav-divider"></div>
                 <a href="https://www.xiaohongshu.com/user/profile/5cf652380000000018035290" target="_blank" class="cta-button">关注我的小红书</a>
             </nav>

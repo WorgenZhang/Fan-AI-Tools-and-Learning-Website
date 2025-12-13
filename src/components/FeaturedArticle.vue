@@ -2,8 +2,13 @@
     <section class="featured-section">
         <div class="featured-card">
             <router-link :to="`/article/${featuredData.articleId}`" class="featured-image-link">
-                <div class="featured-image">
-                    <img :src="getAssetPath(featuredData.image)" alt="Featured Article" />
+                <div class="featured-image" ref="imageContainer">
+                    <img 
+                        :src="getAssetPath(featuredData.image)" 
+                        alt="Featured Article"
+                        @load="onImageLoad"
+                        ref="imageElement"
+                    />
                 </div>
             </router-link>
             <div class="featured-content">
@@ -50,11 +55,68 @@ export default {
             default: () => blogPostFeaturedData
         }
     },
+    data() {
+        return {
+            imageLoaded: false
+        }
+    },
+    mounted() {
+        // 处理图片已缓存的情况
+        this.$nextTick(() => {
+            const img = this.$refs.imageElement
+            if (img && img.complete && img.naturalHeight > 0) {
+                // 延迟一下确保容器宽度已计算
+                setTimeout(() => {
+                    this.onImageLoad({ target: img })
+                }, 0)
+            }
+        })
+        
+        // 监听窗口大小改变
+        window.addEventListener('resize', this.handleResize)
+    },
+    beforeUnmount() {
+        window.removeEventListener('resize', this.handleResize)
+    },
     methods: {
         getAssetPath,
         formatTitle(title) {
             // 如果title包含<br>标签，直接返回，否则按原样返回
             return title
+        },
+        calculateContainerHeight() {
+            const img = this.$refs.imageElement
+            const container = this.$refs.imageContainer
+            if (img && container) {
+                // 获取图片的自然尺寸
+                const naturalWidth = img.naturalWidth
+                const naturalHeight = img.naturalHeight
+                
+                if (naturalWidth > 0 && naturalHeight > 0) {
+                    // 获取容器的实际宽度
+                    const containerWidth = container.offsetWidth || 1021
+                    
+                    // 根据图片比例计算容器高度
+                    const aspectRatio = naturalHeight / naturalWidth
+                    const containerHeight = containerWidth * aspectRatio
+                    
+                    // 设置容器高度，确保精确匹配
+                    container.style.height = `${containerHeight}px`
+                    this.imageLoaded = true
+                }
+            }
+        },
+        onImageLoad(event) {
+            // 使用 requestAnimationFrame 确保在下一帧计算，此时容器宽度已确定
+            requestAnimationFrame(() => {
+                this.calculateContainerHeight()
+            })
+        },
+        handleResize() {
+            if (this.imageLoaded) {
+                // 窗口大小改变时重新计算
+                this.calculateContainerHeight()
+            }
         }
     }
 }
@@ -77,27 +139,32 @@ export default {
 }
 
 .featured-image-link {
-    display: block;
+    display: flex;
     width: 1021px;
     flex-shrink: 0;
     text-decoration: none;
     cursor: pointer;
+    align-self: flex-start;
 }
 
 .featured-image {
     width: 100%;
+    min-height: 300px;
     border-radius: 8px 0 0 8px;
     overflow: hidden;
     background-color: #f0f0f0;
-    display: flex;
-    align-items: flex-start;
+    position: relative;
 }
 
 .featured-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: contain;
+    object-position: center;
 }
 
 .featured-content {
@@ -175,16 +242,20 @@ export default {
 
     .featured-image-link {
         width: 100%;
+        align-self: flex-start;
     }
 
     .featured-image {
         width: 100%;
+        min-height: 300px;
         border-radius: 8px 8px 0 0;
     }
     
     .featured-image img {
         width: 100%;
-        height: auto;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
     }
 }
 </style>
