@@ -4,11 +4,11 @@
   "description": "Fan的AI工具和学习资源库",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:edgeone": "VITE_EDGEONE=true vite build",
-    "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+      "dev": "vite",
+      "build": "vite build", 
+      "build:edgeone": "VITE_EDGEONE=true vite build",
+      "preview": "vite preview",
+      "deploy": "VITE_BASE_URL=/Fan-AI-Tools-and-Learning-Website/ npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "vue": "^3.4.21",
