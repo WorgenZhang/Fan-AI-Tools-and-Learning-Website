@@ -9,7 +9,7 @@
       "build:edgeone": "VITE_EDGEONE=true vite build",
       "preview": "vite preview",
       "deploy": "VITE_BASE_URL=/Fan-AI-Tools-and-Learning-Website/ npm run build && gh-pages -d dist"
-    }
+  },
   "dependencies": {
     "vue": "^3.4.21",
     "vue-router": "^4.6.3"
