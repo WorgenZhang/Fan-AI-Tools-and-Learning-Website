@@ -379,7 +379,7 @@ export const blogPosts = [
         title: "我结合AI工具阅读论文的四个阶段", 
         date: "Dec 1, 2025", 
         tags: ["AI Methodology", "Gemini3.0", "NotebookLM", "ReadPaper", "Paper",  "AI Tools Collection"],
-        coverImage: '/黑白水墨画.png'
+        coverImage: '/黑白水墨画.webp'
     },
     { 
         id: '11',

@@ -67,6 +67,9 @@ npm run preview
 2. 阿里云域名DNS解析配置：https://dnsnext.console.aliyun.com/authoritative
 3. Netlify项目：https://app.netlify.com/teams/worgenzhang/projects
 
+### 图片压缩
+1. cwebp -q 80  黑白水墨画.png -o 黑白水墨画.webp
+
 
 ## 项目结构
 
