@@ -62,6 +62,11 @@ npm run preview
 2. /Users/zhangfan/Desktop/Fan-AI-Tools-Website/src/data/usefulWebsites.js
 3. 卡片尺寸740*940
 
+### Netlify网站部署
+1. 阿里云域名列表：https://dc.console.aliyun.com/next/index?spm=5176.100251.111252.4.4a1c4f15qKvfrH&/#/domain-list/all
+2. 阿里云域名DNS解析配置：https://dnsnext.console.aliyun.com/authoritative
+3. Netlify项目：https://app.netlify.com/teams/worgenzhang/projects
+
 
 ## 项目结构
 
