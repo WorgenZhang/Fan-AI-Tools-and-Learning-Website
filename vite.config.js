@@ -12,6 +12,9 @@ export default defineConfig(({ mode }) => {
     baseUrl = process.env.VITE_BASE_URL
   } else if (process.env.VITE_EDGEONE === 'true') {
     baseUrl = '/' // EdgeOne 部署使用根路径
+  } else if (process.env.NETLIFY === 'true') { 
+    // 新增：如果是 Netlify 部署，强制使用根路径
+    baseUrl = '/'
   } else if (mode === 'production') {
     baseUrl = '/Fan-AI-Tools-and-Learning-Website/' // GitHub Pages
   }
