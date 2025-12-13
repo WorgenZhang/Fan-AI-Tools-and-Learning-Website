@@ -2,26 +2,21 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig(({ mode }) => {
-  // 根据环境变量决定 base URL
-  // VITE_BASE_URL: 自定义 base URL（优先级最高）
-  // VITE_EDGEONE: EdgeOne 部署时设置为 true，使用根路径
-  // 默认：开发环境用 '/'，生产环境用 GitHub Pages 路径
+  // 默认使用根路径，适用于开发环境、Netlify、Vercel 等
   let baseUrl = '/'
   
+  // 只有当环境变量明确指定了 BASE_URL 时才覆盖（例如通过命令行）
   if (process.env.VITE_BASE_URL) {
     baseUrl = process.env.VITE_BASE_URL
-  } else if (process.env.VITE_EDGEONE === 'true') {
-    baseUrl = '/' // EdgeOne 部署使用根路径
-  } else if (process.env.NETLIFY === 'true') { 
-    // 新增：如果是 Netlify 部署，强制使用根路径
-    baseUrl = '/'
-  } else if (mode === 'production') {
-    baseUrl = '/Fan-AI-Tools-and-Learning-Website/' // GitHub Pages
+  } 
+  // EdgeOne 的特殊逻辑保留（如果需要）
+  else if (process.env.VITE_EDGEONE === 'true') {
+    baseUrl = '/' 
   }
-  
+
   return {
     plugins: [vue()],
-    base: baseUrl,
+    base: baseUrl, // 这里使用计算出来的 baseUrl
     server: {
       port: 3000,
       open: true
