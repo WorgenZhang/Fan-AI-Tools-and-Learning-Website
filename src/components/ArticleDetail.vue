@@ -98,19 +98,35 @@ export default {
                 }
             }
             
-            // 对于其他文章，先尝试从 blogPosts 获取（主要数据源）
-            let articleData = getBlogArticleDetail(articleId)
-            if (!articleData) {
-                // 如果 blogPosts 中没有，再尝试从 learningResources 获取
+            // 对于其他文章，根据来源页面决定优先从哪个数据源获取
+            let articleData = null
+            if (isFromLearningResources) {
+                // 如果来自 Learning Resources 页面，优先从 learningResources 获取
                 articleData = getLearningResourceDetail(articleId)
-            }
-            
-            // 如果都没有找到，根据来源页面返回对应的 featured 文章
-            if (!articleData) {
-                if (isFromLearningResources) {
-                    return getLearningResourceDetail('featured')
-                } else {
-                    return getBlogArticleDetail('featured')
+                // 如果返回的是 fallback 的 featured（说明 learningResources 中没有该 id），再尝试从 blogPosts 获取
+                if (articleData && articleData.id !== articleId) {
+                    const blogData = getBlogArticleDetail(articleId)
+                    // 只有当 blogPosts 返回的 id 匹配时才使用
+                    if (blogData && blogData.id === articleId) {
+                        articleData = blogData
+                    } else {
+                        // 如果 blogPosts 也没有，返回 learningResources 的 featured
+                        articleData = getLearningResourceDetail('featured')
+                    }
+                }
+            } else {
+                // 如果来自 Blog 页面，优先从 blogPosts 获取
+                articleData = getBlogArticleDetail(articleId)
+                // 如果返回的是 fallback 的 featured（说明 blogPosts 中没有该 id），再尝试从 learningResources 获取
+                if (articleData && articleData.id !== articleId) {
+                    const learningData = getLearningResourceDetail(articleId)
+                    // 只有当 learningResources 返回的 id 匹配时才使用
+                    if (learningData && learningData.id === articleId) {
+                        articleData = learningData
+                    } else {
+                        // 如果 learningResources 也没有，返回 blogPosts 的 featured
+                        articleData = getBlogArticleDetail('featured')
+                    }
                 }
             }
             

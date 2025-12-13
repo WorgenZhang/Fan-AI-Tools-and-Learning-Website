@@ -40,9 +40,9 @@ export const blogPostFeaturedData = {
 // Learning Resources 页面的 Featured Article 数据
 export const learningResourceFeaturedData = {
     id: 'featured',
-    title: 'Learning Resources Featured Article',
-    image: '/general.png',
-    tags: ['Learning', 'Resources'],
+    title: '推荐一位小红书AI方面宝藏Up主张咋啦',
+    image: '/张咋啦.png',
+    tags: ['小红书', '宝藏Up主'],
     articleId: 'featured'
 }
 

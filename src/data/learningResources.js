@@ -19,22 +19,45 @@ export const getArticleDetail = (id) => {
 const articleDetails = {
     'featured': {
         id: 'featured',
-        title: 'Learning Resources Featured Article',
+        title: '推荐一位小红书AI方面宝藏Up主张咋啦',
         author: '不讲道理的瞬间',
-        date: 'Dec 7, 2025',
-        image: '/general.png',
-        videoUrl: '',
-        videoCover: '',
+        date: 'Nov 2, 2025',
+        image: '/张咋啦.png',
+        videoUrl: 'https://www.xiaohongshu.com/explore/690734700000000007037ac0?xsec_token=ABcbad2SZsHHv6xklECjTh0s2yLUXqq3W1nJkznR3GTl0=&xsec_source=pc_user',
+        videoCover: '/张咋啦-Video.png',
         content: [
             {
                 title: 'Introduction',
                 paragraphs: [
-                    'This is a placeholder for the featured learning resource article. You can add your content here.'
+                    '1. 如何高效做视频',
+                    '2. 所有AI学习资源做成了一个网站',
+                    '3. 如何把X变成AI学习平台',
+                    '4. 发布第一个AI产品'
+                ]
+            },
+        ]
+    },
+    '1': {
+        id: '1',
+        title: '分享我最喜欢的三个小宇宙AI播客频道',
+        author: '不讲道理的瞬间',
+        date: 'Oct 14, 2025',
+        image: '/三个小宇宙播客.png',
+        videoUrl: 'https://www.xiaohongshu.com/explore/68ee4660000000000700d807?xsec_token=AB-WPBvwiXQ4IODbMlWQTGDOTLp9aZ0VfHtCrB_GeBqFk=&xsec_source=pc_user',
+        videoCover: '/三个小宇宙播客-Video.png',
+        content: [
+            {
+                title: 'Introduction',
+                paragraphs: [
+                    '1. 张小珺商业访谈录',
+                    '2. 十字路口Crossing',
+                    '3. WhyNotTV Podcast',
                 ]
             },
         ]
     },
 }
+
 
 // 处理博客列表中的图片路径
 function processBlogPost(post) {
@@ -48,13 +71,11 @@ function processBlogPost(post) {
 
 // 学习资源文章列表（用于Learning Resources页面显示）
 export const learningResourcesPosts = [
-    // 这里可以添加你的学习资源文章
-    // 示例格式：
-    // { 
-    //     id: 'lr1',
-    //     title: "学习资源标题", 
-    //     date: "Dec 1, 2025", 
-    //     tags: ["Tag1", "Tag2"],
-    //     coverImage: '/image.png'
-    // },
+    { 
+        id: '1',
+        title: "分享我最喜欢的三个小宇宙AI播客频道", 
+        date: "Oct 14, 2025", 
+        tags: ["小宇宙播客", "宝藏频道"],
+        coverImage: '/三个小宇宙播客.png'
+    },
 ]

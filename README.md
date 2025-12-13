@@ -57,6 +57,12 @@ npm run preview
 稍等几分钟后，你的网站将发布在：https://worgenzhang.github.io/Fan-AI-Tools-and-Learning-Website/
 
 
+### Useful Websites
+1. /Users/zhangfan/Desktop/Fan-AI-Tools-Website/src/components/WebsiteCard.vue
+2. /Users/zhangfan/Desktop/Fan-AI-Tools-Website/src/data/usefulWebsites.js
+3. 卡片尺寸740*940
+
+
 ## 项目结构
 
 ```
