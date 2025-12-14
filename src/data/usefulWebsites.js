@@ -36,5 +36,19 @@ export const usefulWebsites = [
         url: 'https://www.qianwen.com/aippt',
         coverImage: '/PPT制作.webp'
     },
+    {
+        id: '6',
+        title: 'Netlify-应用线上部署',
+        description: 'Github应用线上部署',
+        url: 'https://www.netlify.com/',
+        coverImage: '/Netlify.webp'
+    },
+    {
+        id: '7',
+        title: '阿里云-公网域名解析',
+        description: '将自己域名指向Netlify域名',
+        url: 'https://dnsnext.console.aliyun.com/authoritative?spm=5176.12818093_47.console-base_product-drawer-right.dproducts-and-services-dns.3be92cc9RySKOT',
+        coverImage: '/阿里云域名解析.webp'
+    },
 ]
 
