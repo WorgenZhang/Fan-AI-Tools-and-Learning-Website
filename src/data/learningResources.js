@@ -22,9 +22,9 @@ const articleDetails = {
         title: '推荐一位小红书AI方面宝藏Up主张咋啦',
         author: '不讲道理的瞬间',
         date: 'Nov 2, 2025',
-        image: '/张咋啦.png',
+        image: '/张咋啦.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/690734700000000007037ac0?xsec_token=ABcbad2SZsHHv6xklECjTh0s2yLUXqq3W1nJkznR3GTl0=&xsec_source=pc_user',
-        videoCover: '/张咋啦-Video.png',
+        videoCover: '/张咋啦-Video.webp',
         content: [
             {
                 title: 'Introduction',
@@ -42,9 +42,9 @@ const articleDetails = {
         title: '分享我最喜欢的三个小宇宙AI播客频道',
         author: '不讲道理的瞬间',
         date: 'Oct 14, 2025',
-        image: '/三个小宇宙播客.png',
+        image: '/三个小宇宙播客.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/68ee4660000000000700d807?xsec_token=AB-WPBvwiXQ4IODbMlWQTGDOTLp9aZ0VfHtCrB_GeBqFk=&xsec_source=pc_user',
-        videoCover: '/三个小宇宙播客-Video.png',
+        videoCover: '/三个小宇宙播客-Video.webp',
         content: [
             {
                 title: 'Introduction',
@@ -76,6 +76,6 @@ export const learningResourcesPosts = [
         title: "分享我最喜欢的三个小宇宙AI播客频道", 
         date: "Oct 14, 2025", 
         tags: ["小宇宙播客", "宝藏频道"],
-        coverImage: '/三个小宇宙播客.png'
+        coverImage: '/三个小宇宙播客.webp'
     },
 ]

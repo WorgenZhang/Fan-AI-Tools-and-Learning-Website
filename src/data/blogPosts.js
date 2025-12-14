@@ -22,9 +22,9 @@ const articleDetails = {
         title: 'Figma+Cursor生成个人网页并使用Github Pages部署全流程纯干货分享',
         author: '不讲道理的瞬间',
         date: 'Dec 7, 2025',
-        image: '/Figma-Cursor-个人网页.png',
+        image: '/Figma-Cursor-个人网页.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/693580de000000001e002a92?xsec_token=ABSJg4X_EWdCnih4dlvPBFEtQn4yS-EV5AgQBv4re9v70=&xsec_source=pc_user',
-        videoCover: '/Figma-Cursor-个人网页-Video.png',
+        videoCover: '/Figma-Cursor-个人网页-Video.webp',
         content: [
             {
                 title: '1. 产生想法',
@@ -94,9 +94,9 @@ const articleDetails = {
         title: '我结合AI工具阅读论文的四个阶段',
         author: '不讲道理的瞬间',
         date: 'Dec 1, 2025',
-        image: '/黑白水墨画.png',
+        image: '/黑白水墨画.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/692bedbb000000001d03bd18?xsec_token=ABKKn7k_AoJIVFMKFqyVr6YeaoBlDdp6xpiLsqUClfJ3k%3D&xsec_source=pc_user',
-        videoCover: '/AI工具阅读论文-Video.png',
+        videoCover: '/AI工具阅读论文-Video.webp',
         content: [
             {
                 title: '阶段一：可视化理解',
@@ -134,9 +134,9 @@ const articleDetails = {
         title: '分享Vibe Coding的一些心得体会',
         author: '不讲道理的瞬间',
         date: 'Nov 29, 2025',
-        image: '/Vibe-Coding.png',
+        image: '/Vibe-Coding.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/692a87c9000000001d03f0ab?xsec_token=ABF-mgAhj-9yXWSReEBC4yeiOdSj5rsmJ48qlHMZd_hcU=&xsec_source=pc_user',
-        videoCover: '/Vibe-Coding-Video.png',
+        videoCover: '/Vibe-Coding-Video.webp',
         content: [
             {
                 title: '1. Idea',
@@ -181,9 +181,9 @@ const articleDetails = {
         title: "'大一统'大模型时代下对于AI工具的迭代法则",
         author: '不讲道理的瞬间',
         date: 'Nov 22, 2025',
-        image: "/AI工具的迭代法则.png",
+        image: "/AI工具的迭代法则.webp",
         videoUrl: 'https://www.xiaohongshu.com/explore/692102c7000000001e0096a0?xsec_token=ABzYZVC5PemWisvuaB02SJcQBRiWfyzPMvF5DiJ9a3RWo=&xsec_source=pc_user',
-        videoCover: '/AI工具的迭代法则-Video.png',
+        videoCover: '/AI工具的迭代法则-Video.webp',
         content: [
             {
                 title: '1. 维度统一',
@@ -211,9 +211,9 @@ const articleDetails = {
         title: '分享四种使用最新Gemini3.0大模型方式',
         author: '不讲道理的瞬间',
         date: 'Nov 25, 2025',
-        image: '/Gemini3.0使用方式.png',
+        image: '/Gemini3.0使用方式.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/691dca6a000000001e006c2f?xsec_token=ABX6gZRUzO9_dBgHSYhAZu6A15AL-k8ekkC1JuSpDjyGs=&xsec_source=pc_user',
-        videoCover: '/Gemini3.0使用方式-Video.png',
+        videoCover: '/Gemini3.0使用方式-Video.webp',
         content: [
             {
                 title: '1. Gemini网页端',
@@ -246,9 +246,9 @@ const articleDetails = {
         title: '大模型时代可能大家都需要具备模型付费思维',
         author: '不讲道理的瞬间',
         date: 'Nov 19, 2025',
-        image: '/付费时代.png',
+        image: '/付费时代.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/691dcdc9000000001e017057?xsec_token=ABX6gZRUzO9_dBgHSYhAZu6PaaZzb8vLtP6vZ8-jE5k7U=&xsec_source=pc_user',
-        videoCover: '/付费时代-Video.png',
+        videoCover: '/付费时代-Video.webp',
         content: [
             {
                 title: '1. 付费意识',
@@ -275,9 +275,9 @@ const articleDetails = {
         title: 'Minimax M2画模块关系图还是挺惊喜的',
         author: '不讲道理的瞬间',
         date: 'Nov 19, 2025',
-        image: '/MinimaxM2时序图.png',
+        image: '/MinimaxM2时序图.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/691dcc1e000000001e000df6?xsec_token=ABX6gZRUzO9_dBgHSYhAZu6H5haAZQNH6_b5lnkGCG9tY=&xsec_source=pc_user',
-        videoCover: '/MinimaxM2时序图-Video.png',
+        videoCover: '/MinimaxM2时序图-Video.webp',
         content: [
             {
                 title: '1. Claude Code + Minimax M2',
@@ -292,9 +292,9 @@ const articleDetails = {
         title: '分享我最爱用的两个阅读论文辅助工具',
         author: '不讲道理的瞬间',
         date: 'Oct 20, 2025',
-        image: '/阅读论文工具.png',
+        image: '/阅读论文工具.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/68f6349f0000000007023105?xsec_token=ABHF3HvkKBrVSeDgfzcdJEvZFAupEKtgHeYAjwhtzVL5s=&xsec_source=pc_user',
-        videoCover: '/阅读论文工具-Video.png',
+        videoCover: '/阅读论文工具-Video.webp',
         content: [
             {
                 title: '',
@@ -311,9 +311,9 @@ const articleDetails = {
         title: '使用通义千问将小宇宙播客音频转写为文字',
         author: '不讲道理的瞬间',
         date: 'Oct 18, 2025',
-        image: '/音频转写为文字.png',
+        image: '/音频转写为文字.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/68f35073000000000700efc8?xsec_token=ABzZI0IsAXwSDvjdD47eb7UxYmWL_UT5QIIlYmn3U5Ugg=&xsec_source=pc_user',
-        videoCover: '/音频转写为文字-Video.png',
+        videoCover: '/音频转写为文字-Video.webp',
         content: [
             {
                 title: '',
@@ -330,9 +330,9 @@ const articleDetails = {
         title: 'Claude4画时序图太香了！4步搞定',
         author: '不讲道理的瞬间',
         date: 'Oct 20, 2025',
-        image: '/Claude4画时序图.png',
+        image: '/Claude4画时序图.webp',
         videoUrl: 'https://www.xiaohongshu.com/explore/685fe120000000000d01a3ae?xsec_token=ABF6h8TeXk3PV-gNtGvKeauM8yI_gb99lBcNjufMeIAg8=&xsec_source=pc_user',
-        videoCover: '/Claude4画时序图-Video.png',
+        videoCover: '/Claude4画时序图-Video.webp',
         content: [
             {
                 title: '1. 写出完美Prompt',
@@ -386,55 +386,55 @@ export const blogPosts = [
         title: "分享Vibe Coding的一些心得体会", 
         date: "Nov 29, 2025", 
         tags: ["AI Methodology", "Vibe Coding", "Cursor"],
-        coverImage: '/Vibe-Coding.png'
+        coverImage: '/Vibe-Coding.webp'
     },
     { 
         id: '10',
         title: "'大一统'大模型时代下对于AI工具的迭代法则", 
         date: "Nov 22, 2025", 
         tags: ["AI Methodology"],
-        coverImage: "/AI工具的迭代法则.png"
+        coverImage: "/AI工具的迭代法则.webp"
     },
     { 
         id: '9',
         title: "分享四种使用最新Gemini3.0大模型方式", 
         date: "Nov 19, 2025", 
         tags: ["Gemini", "Gemini3.0", "Base Model", "AI Tools Collection"],
-        coverImage: "/Gemini3.0使用方式.png"
+        coverImage: "/Gemini3.0使用方式.webp"
     },
     { 
         id: '8',
         title: "大模型时代可能大家都需要具备模型付费思维", 
         date: "Nov 19, 2025", 
         tags: ["AI Methodology"],
-        coverImage: "/付费时代.png"
+        coverImage: "/付费时代.webp"
     },
     { 
         id: '7',
         title: "Minimax M2画模块关系图还是挺惊喜的", 
         date: "Nov 19, 2025", 
         tags: ["Minimax", "Minimax M2", "Base Model", "Diagram",  "AI Tools Collection"],
-        coverImage: "/MinimaxM2时序图.png"
+        coverImage: "/MinimaxM2时序图.webp"
     },
     { 
         id: '6',
         title: "分享我最爱用的两个阅读论文辅助工具", 
         date: "Oct 20, 2025", 
         tags: ["NotebookLM", "ReadPaper", "Paper", "AI Tools Collection"],
-        coverImage: "/阅读论文工具.png"
+        coverImage: "/阅读论文工具.webp"
     },
     { 
         id: '5',
         title: "使用通义千问将小宇宙播客音频转写为文字", 
         date: "Oct 18, 2025", 
         tags: ["Qwen", "小宇宙", "AI Tools Collection"],
-        coverImage: "/音频转写为文字.png"
+        coverImage: "/音频转写为文字.webp"
     },
     { 
         id: '4',
         title: "Claude4画时序图太香了！4步搞定", 
         date: "June 28, 2025", 
         tags: ["Claude", "Claude4.5", "Diagram", "AI Tools Collection"],
-        coverImage: "/Claude4画时序图.png"
+        coverImage: "/Claude4画时序图.webp"
     },
 ]

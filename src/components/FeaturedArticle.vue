@@ -32,7 +32,7 @@ import { getAssetPath } from '../utils/path.js'
 export const blogPostFeaturedData = {
     id: 'featured',
     title: 'Figma+Cursor生成个人网页<br>并使用Github Pages部署<br>全流程纯干货分享',
-    image: '/Figma-Cursor-个人网页.png',
+    image: '/Figma-Cursor-个人网页.webp',
     tags: ['AI Methodology', 'Figma', 'Cursor', 'MCP', 'Github Pages'],
     articleId: 'featured'
 }
@@ -41,7 +41,7 @@ export const blogPostFeaturedData = {
 export const learningResourceFeaturedData = {
     id: 'featured',
     title: '推荐一位小红书AI方面宝藏Up主张咋啦',
-    image: '/张咋啦.png',
+    image: '/张咋啦.webp',
     tags: ['小红书', '宝藏Up主'],
     articleId: 'featured'
 }

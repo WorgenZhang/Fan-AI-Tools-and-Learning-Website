@@ -57,6 +57,10 @@ npm run preview
 稍等几分钟后，你的网站将发布在：https://worgenzhang.github.io/Fan-AI-Tools-and-Learning-Website/
 
 
+### Featured Article
+1. /Users/zhangfan/Desktop/Fan-AI-Tools-Website/src/components/FeaturedArticle.vue
+2. 修改blogPostFeaturedData和learningResourceFeaturedData
+
 ### Useful Websites
 1. /Users/zhangfan/Desktop/Fan-AI-Tools-Website/src/components/WebsiteCard.vue
 2. /Users/zhangfan/Desktop/Fan-AI-Tools-Website/src/data/usefulWebsites.js
@@ -66,9 +70,10 @@ npm run preview
 1. 阿里云域名列表：https://dc.console.aliyun.com/next/index?spm=5176.100251.111252.4.4a1c4f15qKvfrH&/#/domain-list/all
 2. 阿里云域名DNS解析配置：https://dnsnext.console.aliyun.com/authoritative
 3. Netlify项目：https://app.netlify.com/teams/worgenzhang/projects
+4. 个人网站：https://fan-ai-tools-collection.site/  or www.fan-ai-tools-collection.site or fan-ai-tools-collection.site
 
 ### 图片压缩
-1. cwebp -q 80  黑白水墨画.png -o 黑白水墨画.webp
+1. cwebp -q 80 .png -o .webp
 
 
 ## 项目结构
