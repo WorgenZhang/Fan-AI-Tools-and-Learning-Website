@@ -64,7 +64,7 @@ npm run preview
 ### Useful Websites
 1. /Users/zhangfan/Desktop/Fan-AI-Tools-Website/src/components/WebsiteCard.vue
 2. /Users/zhangfan/Desktop/Fan-AI-Tools-Website/src/data/usefulWebsites.js
-3. 卡片尺寸310*320
+3. 卡片尺寸不用在意比例, 按卡片长宽尺寸差不多截就行
 
 ### Netlify网站部署
 1. 阿里云域名列表：https://dc.console.aliyun.com/next/index?spm=5176.100251.111252.4.4a1c4f15qKvfrH&/#/domain-list/all

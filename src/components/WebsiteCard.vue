@@ -18,6 +18,17 @@
         <div class="website-info">
             <h3 class="website-title">{{ website.title }}</h3>
             <p class="website-description">{{ website.description }}</p>
+            <div class="website-tags" v-if="website.tags && website.tags.length > 0">
+                <span 
+                    v-for="tag in website.tags" 
+                    :key="tag"
+                    class="website-tag"
+                    :class="{ active: activeTags && activeTags.includes(tag) }"
+                    @click.stop.prevent="handleTagClick(tag)"
+                >
+                    {{ tag }}
+                </span>
+            </div>
         </div>
     </a>
 </template>
@@ -31,10 +42,18 @@ export default {
         website: {
             type: Object,
             required: true
+        },
+        activeTags: {
+            type: Array,
+            default: () => []
         }
     },
+    emits: ['toggle-tag'],
     methods: {
-        getAssetPath
+        getAssetPath,
+        handleTagClick(tag) {
+            this.$emit('toggle-tag', tag)
+        }
     }
 }
 </script>
@@ -67,6 +86,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 0;
+    line-height: 0;
 }
 
 .website-image img {
@@ -112,12 +133,45 @@ export default {
     font-weight: 400;
     line-height: 20px;
     color: #8f8f8f;
-    margin: 0;
+    margin: 0 0 12px 0;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.website-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: auto;
+}
+
+.website-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: rgba(19, 52, 59, 0.1);
+    color: #13343b;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.website-tag:hover {
+    background-color: rgba(19, 52, 59, 0.2);
+    border-color: #13343b;
+}
+
+.website-tag.active {
+    background-color: #20808d;
+    color: #ffffff;
+    border-color: #20808d;
+}
 </style>
+
 
