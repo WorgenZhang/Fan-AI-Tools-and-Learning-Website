@@ -89,7 +89,34 @@ const articleDetails = {
             },
         ]
     },
-'12': {
+    '13': {
+        id: '13',
+        title: '大模型时代下构建自己的快慢AI工具组合',
+        author: '不讲道理的瞬间',
+        date: 'Dec 11, 2025',
+        image: '/快慢AI工具.webp',
+        videoUrl: 'https://www.xiaohongshu.com/explore/69397372000000001d03e7ee?xsec_token=ABc_GUQDf1ioFkdS2hb5kotOF8x-tQwP-jC-YXzGoErg4=&xsec_source=pc_user',
+        videoCover: '/快慢AI工具-Video.webp',
+        content: [
+            {
+                title: '快AI工具(25.12.18更新)',
+                paragraphs: [
+                    '1. 问答类 - 豆包、夸克',
+                    '2. 语音通话类 - 豆包电话实时交流模式',
+                    '3. 编程类 -  Claude Code + Minimax M2(是否续费?)、Gemini 3 Flash'
+                ]
+            },
+            {
+                title: '慢AI工具(25.12.18更新)',
+                paragraphs: [
+                    '1. 问答类 - Gemini 3 Pro',
+                    '2. 编程类 - Cursor(是否继续续费?)、Google Antigravity(Gemini 3 Pro & Claude Opus 4.5)',
+                    '3. 调研类 - Gemini 3 Pro(Deep Research)'
+                ]
+            }
+        ]
+    },
+    '12': {
         id: '12',
         title: '我结合AI工具阅读论文的四个阶段',
         author: '不讲道理的瞬间',
@@ -194,13 +221,13 @@ const articleDetails = {
             {
                 title: '2. 百花齐放',
                 paragraphs: [
-	                '那在之前的深度学习时代，可能有很多的领域推荐学习算法NLP。甚至CV领域，然后在不同领域里还有各个子场景，他们用的是不同的模型，是百花齐放，那现在呢，在大模型时代呢，就是基于这个统一的架构，可能会有不同的上创新大家但是，但大家在大的维度上是统一的。',
+                    '那在之前的深度学习时代，可能有很多的领域推荐学习算法NLP。甚至CV领域，然后在不同领域里还有各个子场景，他们用的是不同的模型，是百花齐放，那现在呢，在大模型时代呢，就是基于这个统一的架构，可能会有不同的上创新大家但是，但大家在大的维度上是统一的。',
                 ]
             },
             {
                 title: '3. 军备竞赛',
                 paragraphs: [
-	                '那这种统一呢，就导致了各家大模型公司呢，无论是国外的还是国内的，都掀起了一场宏大的军备竞赛。各家模型公司之间会比拼模型的泛化性、表达能力、生成能力，甚至成本等因素，都在这个统一的这个模型架构上去对比'
+                    '那这种统一呢，就导致了各家大模型公司呢，无论是国外的还是国内的，都掀起了一场宏大的军备竞赛。各家模型公司之间会比拼模型的泛化性、表达能力、生成能力，甚至成本等因素，都在这个统一的这个模型架构上去对比'
                 ]
             },
 
@@ -374,66 +401,73 @@ function processBlogPost(post) {
 
 // 博客文章列表（用于首页显示）
 export const blogPosts = [
-    { 
+    {
+        id: '13',
+        title: "大模型时代下构建自己的快慢AI工具组合",
+        date: "Dec 11, 2025",
+        tags: ["AI Methodology", "AI Tools Collection"],
+        coverImage: '/快慢AI工具.webp'
+    },
+    {
         id: '12',
-        title: "我结合AI工具阅读论文的四个阶段", 
-        date: "Dec 1, 2025", 
-        tags: ["AI Methodology", "Gemini3.0", "NotebookLM", "ReadPaper", "Paper",  "AI Tools Collection"],
+        title: "我结合AI工具阅读论文的四个阶段",
+        date: "Dec 1, 2025",
+        tags: ["AI Methodology", "Gemini3.0", "NotebookLM", "ReadPaper", "Paper", "AI Tools Collection"],
         coverImage: '/黑白水墨画.webp'
     },
-    { 
+    {
         id: '11',
-        title: "分享Vibe Coding的一些心得体会", 
-        date: "Nov 29, 2025", 
+        title: "分享Vibe Coding的一些心得体会",
+        date: "Nov 29, 2025",
         tags: ["AI Methodology", "Vibe Coding", "Cursor"],
         coverImage: '/Vibe-Coding.webp'
     },
-    { 
+    {
         id: '10',
-        title: "'大一统'大模型时代下对于AI工具的迭代法则", 
-        date: "Nov 22, 2025", 
+        title: "'大一统'大模型时代下对于AI工具的迭代法则",
+        date: "Nov 22, 2025",
         tags: ["AI Methodology"],
         coverImage: "/AI工具的迭代法则.webp"
     },
-    { 
+    {
         id: '9',
-        title: "分享四种使用最新Gemini3.0大模型方式", 
-        date: "Nov 19, 2025", 
+        title: "分享四种使用最新Gemini3.0大模型方式",
+        date: "Nov 19, 2025",
         tags: ["Gemini", "Gemini3.0", "Base Model", "AI Tools Collection"],
         coverImage: "/Gemini3.0使用方式.webp"
     },
-    { 
+    {
         id: '8',
-        title: "大模型时代可能大家都需要具备模型付费思维", 
-        date: "Nov 19, 2025", 
+        title: "大模型时代可能大家都需要具备模型付费思维",
+        date: "Nov 19, 2025",
         tags: ["AI Methodology"],
         coverImage: "/付费时代.webp"
     },
-    { 
+    {
         id: '7',
-        title: "Minimax M2画模块关系图还是挺惊喜的", 
-        date: "Nov 19, 2025", 
-        tags: ["Minimax", "Minimax M2", "Base Model", "Diagram",  "AI Tools Collection"],
+        title: "Minimax M2画模块关系图还是挺惊喜的",
+        date: "Nov 19, 2025",
+        tags: ["Minimax", "Minimax M2", "Base Model", "Diagram", "AI Tools Collection"],
         coverImage: "/MinimaxM2时序图.webp"
     },
-    { 
+    {
         id: '6',
-        title: "分享我最爱用的两个阅读论文辅助工具", 
-        date: "Oct 20, 2025", 
+        title: "分享我最爱用的两个阅读论文辅助工具",
+        date: "Oct 20, 2025",
         tags: ["NotebookLM", "ReadPaper", "Paper", "AI Tools Collection"],
         coverImage: "/阅读论文工具.webp"
     },
-    { 
+    {
         id: '5',
-        title: "使用通义千问将小宇宙播客音频转写为文字", 
-        date: "Oct 18, 2025", 
+        title: "使用通义千问将小宇宙播客音频转写为文字",
+        date: "Oct 18, 2025",
         tags: ["Qwen", "小宇宙", "AI Tools Collection"],
         coverImage: "/音频转写为文字.webp"
     },
-    { 
+    {
         id: '4',
-        title: "Claude4画时序图太香了！4步搞定", 
-        date: "June 28, 2025", 
+        title: "Claude4画时序图太香了！4步搞定",
+        date: "June 28, 2025",
         tags: ["Claude", "Claude4.5", "Diagram", "AI Tools Collection"],
         coverImage: "/Claude4画时序图.webp"
     },

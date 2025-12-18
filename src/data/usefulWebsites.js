@@ -65,6 +65,14 @@ export const usefulWebsites = [
         coverImage: '/Drawio.png',
         tags: ['时序图', 'drawio', '论文']
     },
+    {
+        id: '9',
+        title: 'LongCut',
+        description: 'The best way to learn from long videos(Youtube)',
+        url: 'https://www.longcut.ai/',
+        coverImage: '/Longcut.webp',
+        tags: ['Video', 'Youtube', '视频解析']
+    },
 ]
 
 
