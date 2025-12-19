@@ -62,7 +62,7 @@ export const usefulWebsites = [
         title: 'Next AI Draw IO',
         description: '让大模型在drawio生成可视化图表',
         url: 'https://github.com/DayuanJiang/next-ai-draw-io?tab=readme-ov-file',
-        coverImage: '/Drawio.png',
+        coverImage: '/Drawio.webp',
         tags: ['时序图', 'drawio', '论文']
     },
     {
@@ -78,7 +78,7 @@ export const usefulWebsites = [
         title: 'Deepcode',
         description: 'Transforms research papers and natural language into production-ready code',
         url: 'https://github.com/HKUDS/DeepCode?tab=readme-ov-file',
-        coverImage: '/Deepcode.webp',
+        coverImage: '/Deepcode2.webp',
         tags: ['Paper', 'Algorithm', 'Agent', 'Code']
     },
     {
