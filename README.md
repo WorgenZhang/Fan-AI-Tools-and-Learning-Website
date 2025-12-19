@@ -74,7 +74,7 @@ npm run preview
 
 ### 图片压缩
 1. cwebp -q 80 .png -o .webp
-2. magick .png -resize 310x320 .png
+2. magick .png -resize 310x320/435x275 .png
 
 
 ## 项目结构
