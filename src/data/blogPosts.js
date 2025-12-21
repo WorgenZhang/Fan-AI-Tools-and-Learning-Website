@@ -19,6 +19,48 @@ export const getArticleDetail = (id) => {
 const articleDetails = {
     'featured': {
         id: 'featured',
+        title: '全民AI时代普通人该如何自处和适应全新的模式',
+        author: '不讲道理的瞬间',
+        date: 'Dec 22, 2025',
+        image: '/全民AI时代.webp',
+        videoUrl: 'https://www.xiaohongshu.com/explore/6947efbb000000001e008224?xsec_token=ABKmx8Y0HAEfiiA4C0wv6i_kkOK1iqYcndhNeaqkWyUk8=&xsec_source=pc_user',
+        videoCover: '/全民AI时代-Video.webp',
+        content: [
+            {
+                title: '1. 当下的时代是人人都能用AI的时代',
+                paragraphs: [
+                    '无论你从事什么职业，都可以用或多或少的资源获得相应的AI工具/模型, 去帮助你提效、更好得生活、更容易得获取到信息, 但也更容易催生焦虑'
+                ]
+            },
+            {
+                title: '2. AI应用领域太广了, 思维要打开, 要突破传统思维',
+                paragraphs: [
+                    '工作/学习就不用说了、生活跟AI语音交流、甚至可以用模型对比几款纠结中的保险产品、健康领域可以用专属的AI助手(蚂蚁阿福)'
+                ]
+            }
+        ]
+    },
+    '15': {
+        id: '15',
+        title: 'Antigravity绕开地区限制 & 实测纯干货分享',
+        author: '不讲道理的瞬间',
+        date: 'Dec 20, 2025',
+        image: '/Antigravity.webp',
+        videoUrl: 'https://www.xiaohongshu.com/explore/694611bf000000001e016ac2?xsec_token=ABEP9_JsZLim9e4mOTR4Pnah8cZwAa_bVR-C42ed3fmZ0=&xsec_source=pc_user',
+        videoCover: '/Antigravity-Video.webp',
+        content: [
+            {
+                title: '1. 先说结论 - 准入门槛高但值得入手',
+                paragraphs: [
+                    '需要花大力气解决地区限制问题',
+                    '目前Individual Plan免费但可以使用Gemini 3 Pro & Flash, Claude Sonnet & Opus 4.5这些强大模型',
+                    'IDE交互体验更友好和细致'
+                ]
+            }
+        ]
+    },
+    '14': {
+        id: '14',
         title: 'Figma+Cursor生成个人网页并使用Github Pages部署全流程纯干货分享',
         author: '不讲道理的瞬间',
         date: 'Dec 7, 2025',
@@ -399,8 +441,23 @@ function processBlogPost(post) {
     return processed
 }
 
+
 // 博客文章列表（用于首页显示）
 export const blogPosts = [
+    {
+        id: '15',
+        title: "Antigravity绕开地区限制 & 实测纯干货分享",
+        date: "Dec 20, 2025",
+        tags: ["AI Tools Collection", "Antigravity", "Gemini3.0", "Claude"],
+        coverImage: '/Antigravity.webp'
+    },
+    {
+        id: '14',
+        title: "Figma+Cursor生成个人网页并使用Github Pages部署全流程纯干货分享",
+        date: "Dec 7, 2025",
+        tags: ["AI Methodology", "AI Tools Collection", "Figma", "Cursor", "MCP", "Github Pages"],
+        coverImage: '/Figma-Cursor-个人网页.webp'
+    },
     {
         id: '13',
         title: "大模型时代下构建自己的快慢AI工具组合",

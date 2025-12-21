@@ -31,9 +31,9 @@ import { getAssetPath } from '../utils/path.js'
 // Blog Post 页面的 Featured Article 数据
 export const blogPostFeaturedData = {
     id: 'featured',
-    title: 'Figma+Cursor生成个人网页<br>并使用Github Pages部署<br>全流程纯干货分享',
-    image: '/Figma-Cursor-个人网页.webp',
-    tags: ['AI Methodology', 'Figma', 'Cursor', 'MCP', 'Github Pages'],
+    title: '全民AI时代<br>普通人该如何自处和适应全新的模式',
+    image: '/全民AI时代.webp',
+    tags: ['AI Methodology'],
     articleId: 'featured'
 }
 
