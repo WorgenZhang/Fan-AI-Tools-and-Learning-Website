@@ -141,18 +141,19 @@ const articleDetails = {
         videoCover: '/快慢AI工具-Video.webp',
         content: [
             {
-                title: '快AI工具(25.12.18更新)',
+                title: '快AI工具(25.12.24更新)',
                 paragraphs: [
-                    '1. 问答类 - 豆包、夸克',
-                    '2. 语音通话类 - 豆包电话实时交流模式',
-                    '3. 编程类 -  Claude Code + Minimax M2(是否续费?)、Gemini 3 Flash'
+                    '1. 通用问答类 - 豆包、夸克、Gemini 3 Flash',
+                    '2. 健康问答类 - 蚂蚁阿福',
+                    '3. 语音通话类 - 豆包电话实时交流模式',
+                    '4. 编程类 -  Claude Code + Minimax M2.1(Starter套餐) or GLM-4.7(还暂未体验)'
                 ]
             },
             {
-                title: '慢AI工具(25.12.18更新)',
+                title: '慢AI工具(25.12.24更新)',
                 paragraphs: [
                     '1. 问答类 - Gemini 3 Pro',
-                    '2. 编程类 - Cursor(是否继续续费?)、Google Antigravity(Gemini 3 Pro & Claude Opus 4.5)',
+                    '2. 编程类 - Cursor(暂时不用续费)、Google Antigravity(Gemini 3 Pro & Claude Opus 4.5)',
                     '3. 调研类 - Gemini 3 Pro(Deep Research)'
                 ]
             }
