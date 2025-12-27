@@ -156,6 +156,17 @@ const articleDetails = {
                     '2. 编程类 - Cursor(暂时不用续费)、Google Antigravity(Gemini 3 Pro & Claude Opus 4.5)',
                     '3. 调研类 - Gemini 3 Pro(Deep Research)'
                 ]
+            },
+            {
+                title: '花叔叔-最近三天又在疯狂用AI编程工具(25.12.26更新)',
+                paragraphs: [
+                    '1. https://mp.weixin.qq.com/s/6M3Z7jzF8LM8SZXwXIWKKw',
+                    '2. Claude Opus 4.5依然是最好的模型，从前到后全方面地稳定和强',
+                    '3. OpenAI Codex的情况有些特殊，内置的gpt-5.2-codex模型选high及以上的思考模式时，后端开发能力巨好，能跑的时间无比长，经常能一个任务跑一个多小时，然后完全没有bug的。但是速度也是真的慢，思考的时间有点过久了，以及审美是真的差，所以不适合用来做前端以及聊功能和对话的',
+                    '4. Codex的上下文工程优化比Claude Code好不少，会很好地进行自动化地compact，所以基本上可以在一个窗口下不停布置任务，不用担心任务间干扰或者上下文撑爆，能更沉浸地vibe coding，Claude code更适合每个独立任务都新开窗口执行',
+                    '5. glm-4.7也还挺不错的，肯定不如前面说的几个，但是也能连续执行一个小时以上的任务，而且它在Claude code中也能管理多个子agent执行任务。在这个情况下，很多批量写作之类的任务你甚至不需要写脚本调用API，让glm-4.7+cc去调用子agent批量执行即可，很省事',
+                    '6. 在Claude Opus 4.5用量不够的情况下，可以选择的一个做法是前期先用别的工具和模型初步搭出个雏形来，让Codex解决所有bug保障产品可运行，最后让Claude Opus 4.5擦屁股，优化整体界面设计和重新梳理一遍产品结构框架和对用户表达的文案'
+                ]
             }
         ]
     },
