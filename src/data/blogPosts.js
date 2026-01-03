@@ -40,6 +40,17 @@ const articleDetails = {
             }
         ]
     },
+    '16': {
+        id: '16',
+        title: '如何用Gemini模仿火柴人风格小红书笔记',
+        author: '不讲道理的瞬间',
+        date: 'Jan 2, 2026',
+        image: '/火柴人.webp',
+        videoUrl: 'https://www.xiaohongshu.com/explore/69577688000000001d03bf7c?xsec_token=ABDWJRnbe3RqZ_gX5q3GZsD07r0VItCUI3s7kxtlD5AV8=&xsec_source=pc_user',
+        videoCover: '/火柴人-Video.webp',
+        content: [
+        ]
+    },
     '15': {
         id: '15',
         title: 'Antigravity绕开地区限制 & 实测纯干货分享',
@@ -456,6 +467,13 @@ function processBlogPost(post) {
 
 // 博客文章列表（用于首页显示）
 export const blogPosts = [
+    {
+        id: '16',
+        title: "如何用Gemini模仿火柴人风格小红书笔记",
+        date: "Jan 2, 2026",
+        tags: ["AI Methodology", "Gemini3.0", "Nano Banana"],
+        coverImage: '/火柴人.webp'
+    },
     {
         id: '15',
         title: "Antigravity绕开地区限制 & 实测纯干货分享",
