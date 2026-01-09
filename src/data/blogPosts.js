@@ -40,6 +40,17 @@ const articleDetails = {
             }
         ]
     },
+    '17': {
+        id: '17',
+        title: '分享几个深入理解Github Repo的AI工具',
+        author: '不讲道理的瞬间',
+        date: 'Jan 7, 2026',
+        image: '/GithubRepo.webp',
+        videoUrl: 'https://www.xiaohongshu.com/explore/695e5bdc0000000009039577?xsec_token=ABpIfL_oqmcxd9lAxyms3jccEi5LtfEzMohGz1vUWSCSY=&xsec_source=pc_user',
+        videoCover: '/GithubRepo-Video.webp',
+        content: [
+        ]
+    },
     '16': {
         id: '16',
         title: '如何用Gemini模仿火柴人风格小红书笔记',
@@ -467,6 +478,13 @@ function processBlogPost(post) {
 
 // 博客文章列表（用于首页显示）
 export const blogPosts = [
+    {
+        id: '17',
+        title: "分享几个深入理解Github Repo的AI工具",
+        date: "Jan 7, 2026",
+        tags: ["AI Methodology", "Github Repo", "Nano Banana", "NotebookLM", "Wiki"],
+        coverImage: '/GithubRepo.webp'
+    },
     {
         id: '16',
         title: "如何用Gemini模仿火柴人风格小红书笔记",
